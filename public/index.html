@@ -1,55 +1,38 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Recharge - DingConnect Demo</title>
-  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <title>DingConnect Demo</title>
+  <style>
+    body { font-family: Arial; padding: 20px; background: #f6f6f6; }
+    select, input, button { padding: 8px; margin: 5px; }
+    .result { background: #fff; padding: 10px; border-radius: 5px; margin-top: 10px; }
+  </style>
 </head>
 <body>
-  <aside class="sidebar">
-    <h2>Recharge</h2>
-    <nav>
-      <a href="#">Nova recarga</a>
-      <a href="#history">Histórico</a>
-      <a href="#admin">Admin</a>
-    </nav>
-  </aside>
-  <main class="main">
-    <header>
-      <h1>Recarga de Celular</h1>
-    </header>
+  <h2>💡 Recharge Mobile - DingConnect</h2>
+  <div>
+    <label>Pays :</label>
+    <select id="country"></select>
+  </div>
+  <div>
+    <label>Fournisseur :</label>
+    <select id="provider"></select>
+  </div>
+  <div>
+    <label>Produit :</label>
+    <select id="product"></select>
+  </div>
+  <div>
+    <label>Numéro :</label>
+    <input id="accountNumber" placeholder="Ex: 5511999999999">
+  </div>
+  <button id="estimateBtn">💰 Estimer le prix</button>
+  <div class="result" id="estimateResult"></div>
 
-    <section id="topup">
-      <label>País
-        <select id="country"></select>
-      </label>
+  <button id="payBtn">⚡ Envoyer la recharge</button>
+  <div class="result" id="sendResult"></div>
 
-      <label>Operador
-        <select id="provider"></select>
-      </label>
-
-      <label>Número do celular
-        <input id="accountNumber" placeholder="5511999887766" />
-      </label>
-
-      <label>Produto (valor)
-        <select id="product"></select>
-      </label>
-
-      <button id="estimateBtn">Estimar preço</button>
-      <div id="estimateResult"></div>
-
-      <button id="payBtn">Simular pagamento e enviar recarga</button>
-      <div id="sendResult"></div>
-    </section>
-
-    <section id="history">
-      <h2>Histórico (local)</h2>
-      <div id="historyList">Nenhuma transação local (demo)</div>
-    </section>
-  </main>
-
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
