@@ -1,9 +1,0 @@
-body{font-family:Arial,Helvetica,sans-serif;margin:0;display:flex}
-.sidebar{width:220px;background:#111;color:#fff;min-height:100vh;padding:18px}
-.sidebar nav a{display:block;color:#fff;padding:8px 0;text-decoration:none}
-.main{flex:1;padding:20px}
-header{border-bottom:1px solid #eee;padding-bottom:12px;margin-bottom:12px}
-label{display:block;margin:8px 0}
-input,select{display:block;padding:8px;width:320px;margin-top:6px}
-button{padding:10px 14px;margin-top:10px}
-#estimateResult,#sendResult{margin-top:8px}
