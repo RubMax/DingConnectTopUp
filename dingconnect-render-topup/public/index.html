@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Recharge - DingConnect Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <h2>Recharge</h2>
+    <nav>
+      <a href="#">Nova recarga</a>
+      <a href="#history">Histórico</a>
+      <a href="#admin">Admin</a>
+    </nav>
+  </aside>
+  <main class="main">
+    <header>
+      <h1>Recarga de Celular</h1>
+    </header>
+
+    <section id="topup">
+      <label>País
+        <select id="country"></select>
+      </label>
+
+      <label>Operador
+        <select id="provider"></select>
+      </label>
+
+      <label>Número do celular
+        <input id="accountNumber" placeholder="5511999887766" />
+      </label>
+
+      <label>Produto (valor)
+        <select id="product"></select>
+      </label>
+
+      <button id="estimateBtn">Estimar preço</button>
+      <div id="estimateResult"></div>
+
+      <button id="payBtn">Simular pagamento e enviar recarga</button>
+      <div id="sendResult"></div>
+    </section>
+
+    <section id="history">
+      <h2>Histórico (local)</h2>
+      <div id="historyList">Nenhuma transação local (demo)</div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
